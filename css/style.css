@@ -78,7 +78,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; color: v
 
 .zone { cursor: pointer; outline: none; transition: opacity .35s ease, filter .35s ease; }
 .zone .flaeche { transition: stroke .3s; }
-#gartenplan.hat-wahl .zone { opacity: .5; filter: saturate(.55); }
+#gartenplan.hat-wahl .zone { opacity: .62; filter: saturate(.7); }
 #gartenplan.hat-wahl .zone.an { opacity: 1; filter: none; }
 .zone:focus-visible .flaeche { stroke: #C2643A; stroke-width: 4; }
 
