@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Frank Morlak · Kultur-, Garten- und Landschaftsbau in Gronau-Epe (Entwurf)</title>
+<meta name="description" content="Unverbindlicher Website-Entwurf für Frank Morlak Kultur-, Garten- und Landschaftsbau, Gronau-Epe.">
+<link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231E3A2A'/%3E%3Cpath d='M16 26V14' stroke='%23F3EFE4' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M16 16c-6 0-8-4-8-8 5 0 8 3 8 8zM16 14c0-5 3-8 8-8 0 5-3 8-8 8z' fill='%239CBB64'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="entwurf-band">Unverbindlicher Entwurf von Leon Oßendorf · kein offizieller Auftritt von Frank Morlak</div>
+
+<header class="kopf">
+  <div class="wrap kopf-in">
+    <a class="marke" href="#start" aria-label="Frank Morlak, zur Startseite">
+      <svg class="marke-zeichen" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34V17" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M20 20c-7.5 0-10-5-10-10 6.5 0 10 4 10 10z" fill="#8DB05A"/><path d="M20 17.5c0-6.5 3.5-10 10-10 0 6.5-3.5 10-10 10z" fill="#6E9644"/><path d="M9 34.5h22" stroke="#8A6A47" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span><b>Frank Morlak</b><small>Kultur-, Garten- und Landschaftsbau</small></span>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#stimmen">Kunden</a>
+      <a href="#anfrage">Anfrage</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="knopf knopf-tel" href="tel:+492565400026"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg><span>02565 40 00 26</span></a>
+  </div>
+</header>
+
+<main id="start">
+
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="kicker">Garten- und Landschaftsbau aus Gronau-Epe</p>
+      <h1>Was soll in Ihrem Garten passieren?</h1>
+      <p class="lead">Wege und Terrassen, Pflanzen, Baumpflege und regelmäßige Pflege: Frank Morlak kümmert sich darum, vom Storker Hook in Epe aus. <span class="nur-gross">Zeigen Sie im Plan auf den Bereich, um den es Ihnen geht.</span><span class="nur-klein">Tippen Sie im Plan auf den Bereich, um den es Ihnen geht.</span></p>
+
+      <div class="zonenkarte" id="zonenkarte" aria-live="polite">
+        <div class="zk-bild"><img id="zk-img" src="img/wege-640.jpg" alt="Beispielbild: gepflasterter Gartenweg mit Natursteinmauer und Hecken" width="640" height="427"><span class="beispiel">Beispielbild</span></div>
+        <div class="zk-text">
+          <p class="zk-nr"><span id="zk-nr">1</span> im Plan</p>
+          <h2 id="zk-titel">Terrasse und Wege</h2>
+          <p id="zk-satz">Terrassen, Wege und Einfahrten, neu angelegt oder umgestaltet.</p>
+          <a class="knopf knopf-voll" id="zk-link" href="#anfrage" data-wahl="bau">Das anfragen</a>
+        </div>
+      </div>
+    </div>
+
+    <figure class="plan" aria-label="Gezeichneter Gartenplan mit vier Bereichen">
+      <div class="papier">
+        <svg id="gartenplan" viewBox="0 0 900 600" role="group" aria-label="Gartenplan: 1 Terrasse und Wege, 2 Beete und Pflanzen, 3 Bäume, 4 Hecke und Rasen">
+          <defs>
+            <filter id="aquarell" x="-5%" y="-5%" width="110%" height="110%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="7" result="n"/>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="krone" x="-15%" y="-15%" width="130%" height="130%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="3" seed="3" result="n"/>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G" result="d"/>
+              <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="t"/>
+              <feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.3 1.05" result="tm"/>
+              <feComposite in="d" in2="tm" operator="in"/>
+            </filter>
+            <filter id="stauden" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.12" numOctaves="2" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/></filter>
+            <filter id="schatten" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="9"/></filter>
+            <filter id="korn" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.28  0 0 0 0 0.18  0 0 0 0.10 0"/>
+            </filter>
+            <pattern id="pflaster" width="36" height="18" patternUnits="userSpaceOnUse">
+              <rect width="36" height="18" fill="#D9CFBC"/>
+              <path d="M0 .5h36M0 9.5h36M18 .5v9M0 9.5v9M36 9.5v9" stroke="#AE9F86" stroke-width="1.1"/>
+            </pattern>
+            <pattern id="rasen" width="44" height="44" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)">
+              <rect width="44" height="44" fill="#A7C27A"/>
+              <rect width="22" height="44" fill="#9DBA70"/>
+            </pattern>
+            <pattern id="schraffur" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <rect width="10" height="10" fill="#ECE6D8"/>
+              <path d="M0 0v10" stroke="#B8AE9A" stroke-width="1.4"/>
+            </pattern>
+            <radialGradient id="laub" cx="42%" cy="38%" r="65%">
+              <stop offset="0" stop-color="#93B565"/>
+              <stop offset=".6" stop-color="#6E9748"/>
+              <stop offset="1" stop-color="#4C7536"/>
+            </radialGradient>
+            <radialGradient id="laub2" cx="42%" cy="38%" r="65%">
+              <stop offset="0" stop-color="#A4BE6A"/>
+              <stop offset=".6" stop-color="#7C9C4C"/>
+              <stop offset="1" stop-color="#58773A"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Grundstück -->
+          <rect x="0" y="0" width="900" height="600" fill="#F3EFE4"/>
+          <g class="raster" stroke="#E3DCCB" stroke-width="1">
+            <path d="M60 0V600M120 0V600M180 0V600M240 0V600M300 0V600M360 0V600M420 0V600M480 0V600M540 0V600M600 0V600M660 0V600M720 0V600M780 0V600M840 0V600"/>
+            <path d="M0 60H900M0 120H900M0 180H900M0 240H900M0 300H900M0 360H900M0 420H900M0 480H900M0 540H900"/>
+          </g>
+
+          <!-- 4: Hecke und Rasen (Pflege) -->
+          <g class="zone" data-z="pflege" tabindex="0" role="button" aria-label="4 Hecke und Rasen">
+            <path class="flaeche" filter="url(#aquarell)" fill="url(#rasen)" d="M318 64 C 470 58, 640 62, 806 70 L 812 520 C 700 530, 560 536, 470 530 L 470 560 L 394 560 L 394 528 C 300 522, 200 520, 64 524 L 62 352 C 140 350, 250 352, 318 346 Z"/>
+            <path class="hecke" filter="url(#aquarell)" d="M852 40 L 852 558 M40 558 L 360 558 M500 558 L 852 558" stroke="#4E7638" stroke-width="34" stroke-linecap="round" fill="none"/>
+            <path filter="url(#aquarell)" d="M852 40 L 852 558 M40 558 L 360 558 M500 558 L 852 558" stroke="#668F45" stroke-width="18" stroke-linecap="round" fill="none" stroke-dasharray="2 14" opacity=".9"/>
+          </g>
+
+          <!-- Haus -->
+          <g class="haus">
+            <rect x="40" y="40" width="262" height="176" fill="url(#schraffur)" stroke="#2B3A2E" stroke-width="3"/>
+            <path d="M40 40 L171 128 L302 40 M171 128 V216" stroke="#2B3A2E" stroke-width="1.4" fill="none" opacity=".5"/>
+            <text x="171" y="186" class="plantext klein" text-anchor="middle">Haus</text>
+          </g>
+
+          <!-- 1: Terrasse und Wege (Bau) -->
+          <g class="zone" data-z="bau" tabindex="0" role="button" aria-label="1 Terrasse und Wege">
+            <rect class="flaeche" x="40" y="216" width="262" height="120" fill="url(#pflaster)" stroke="#8C7E66" stroke-width="2"/>
+            <path d="M226 336 C 238 410, 330 430, 400 470 C 430 488, 432 520, 432 562" stroke="#8C7E66" stroke-width="50" fill="none" stroke-linecap="butt"/>
+            <path class="flaeche" d="M226 336 C 238 410, 330 430, 400 470 C 430 488, 432 520, 432 562" stroke="url(#pflaster)" stroke-width="45" fill="none" stroke-linecap="butt"/>
+            <rect x="394" y="556" width="76" height="12" fill="#2B3A2E"/>
+            <text x="432" y="590" class="plantext klein" text-anchor="middle">Pforte</text>
+          </g>
+
+          <!-- 2: Beete und Pflanzen -->
+          <g class="zone" data-z="pflanzen" tabindex="0" role="button" aria-label="2 Beete und Pflanzen">
+            <path class="flaeche" filter="url(#aquarell)" fill="#9C7B57" d="M318 82 C 400 76, 470 80, 520 92 C 540 120, 520 150, 470 150 C 420 152, 360 150, 322 140 Z"/>
+            <path class="flaeche" filter="url(#aquarell)" fill="#9C7B57" d="M540 300 C 600 268, 700 272, 730 318 C 752 352, 720 392, 664 392 C 610 394, 548 380, 532 346 C 526 330, 530 312, 540 300 Z"/>
+            <path class="flaeche" filter="url(#aquarell)" fill="#9C7B57" d="M66 364 C 120 360, 170 366, 196 380 C 206 410, 180 430, 130 432 C 100 434, 72 428, 66 416 Z"/>
+            <g class="stauden" filter="url(#stauden)">
+              <circle cx="345" cy="112" r="16" fill="#7FA458"/><circle cx="375" cy="104" r="12" fill="#9A86C4"/><circle cx="400" cy="120" r="15" fill="#6E9748"/><circle cx="430" cy="106" r="11" fill="#E0B64C"/><circle cx="455" cy="122" r="14" fill="#86AB5C"/><circle cx="484" cy="110" r="12" fill="#9A86C4"/><circle cx="505" cy="126" r="9" fill="#D9838F"/><circle cx="368" cy="132" r="9" fill="#D9838F"/><circle cx="425" cy="135" r="9" fill="#9A86C4"/>
+              <circle cx="566" cy="318" r="18" fill="#7FA458"/><circle cx="600" cy="300" r="13" fill="#E0B64C"/><circle cx="628" cy="324" r="17" fill="#6E9748"/><circle cx="660" cy="300" r="12" fill="#9A86C4"/><circle cx="690" cy="322" r="16" fill="#86AB5C"/><circle cx="712" cy="346" r="11" fill="#D9838F"/><circle cx="596" cy="352" r="13" fill="#9A86C4"/><circle cx="640" cy="364" r="15" fill="#7FA458"/><circle cx="680" cy="370" r="11" fill="#E0B64C"/><circle cx="560" cy="350" r="9" fill="#D9838F"/>
+              <circle cx="92" cy="392" r="14" fill="#86AB5C"/><circle cx="120" cy="380" r="10" fill="#9A86C4"/><circle cx="146" cy="398" r="13" fill="#6E9748"/><circle cx="174" cy="390" r="9" fill="#E0B64C"/><circle cx="120" cy="414" r="9" fill="#D9838F"/>
+            </g>
+          </g>
+
+          <!-- 3: Bäume -->
+          <g class="zone" data-z="baum" tabindex="0" role="button" aria-label="3 Bäume">
+            <ellipse cx="712" cy="196" rx="92" ry="86" fill="#2E3B22" opacity=".28" filter="url(#schatten)"/>
+            <circle class="flaeche" cx="694" cy="178" r="88" fill="url(#laub)" filter="url(#krone)"/>
+            <circle cx="670" cy="152" r="46" fill="#A9C576" opacity=".35" filter="url(#krone)"/><circle cx="722" cy="206" r="40" fill="#3F6530" opacity=".3" filter="url(#krone)"/><circle cx="694" cy="178" r="5" fill="#5A3E26"/>
+            <ellipse cx="236" cy="482" rx="60" ry="56" fill="#2E3B22" opacity=".26" filter="url(#schatten)"/>
+            <circle class="flaeche" cx="222" cy="468" r="56" fill="url(#laub2)" filter="url(#krone)"/>
+            <circle cx="206" cy="452" r="28" fill="#B8CF84" opacity=".35" filter="url(#krone)"/><circle cx="222" cy="468" r="4" fill="#5A3E26"/>
+            <ellipse cx="780" cy="474" rx="48" ry="44" fill="#2E3B22" opacity=".24" filter="url(#schatten)"/>
+            <circle class="flaeche" cx="768" cy="462" r="44" fill="url(#laub)" filter="url(#krone)"/>
+            <circle cx="754" cy="448" r="22" fill="#A9C576" opacity=".35" filter="url(#krone)"/><circle cx="768" cy="462" r="3.5" fill="#5A3E26"/>
+          </g>
+
+          <!-- Papierkorn -->
+          <rect x="0" y="0" width="900" height="600" filter="url(#korn)" pointer-events="none"/>
+
+          <!-- Beschriftung -->
+          <g class="marken" pointer-events="none">
+            <g class="marke-nr" data-z="bau"><path class="leit" d="M150 276 L 108 296"/><circle cx="150" cy="276" r="19"/><text x="150" y="283" text-anchor="middle">1</text><text class="lbl" x="66" y="312">Terrasse &amp; Wege</text></g>
+            <g class="marke-nr" data-z="pflanzen"><path class="leit" d="M630 336 L 640 420"/><circle cx="630" cy="336" r="19"/><text x="630" y="343" text-anchor="middle">2</text><text class="lbl" x="560" y="444">Beete &amp; Pflanzen</text></g>
+            <g class="marke-nr" data-z="baum"><path class="leit" d="M694 178 L 596 214"/><circle cx="694" cy="178" r="19"/><text x="694" y="185" text-anchor="middle">3</text><text class="lbl" x="520" y="232">Bäume</text></g>
+            <g class="marke-nr" data-z="pflege"><path class="leit" d="M520 470 L 340 480"/><circle cx="520" cy="470" r="19"/><text x="520" y="477" text-anchor="middle">4</text><text class="lbl" x="250" y="532">Hecke &amp; Rasen</text></g>
+          </g>
+
+          <!-- Nordpfeil und Maßstab -->
+          <g class="nord" transform="translate(792 106)" pointer-events="none">
+            <circle r="22" fill="#F3EFE4" stroke="#2B3A2E" stroke-width="1.6"/>
+            <path d="M0 -16 L 8 10 L 0 4 L -8 10 Z" fill="#2B3A2E"/>
+            <text y="-28" text-anchor="middle" class="plantext klein">N</text>
+          </g>
+        </svg>
+      </div>
+      <div class="plankopf" aria-hidden="false">
+        <div><span>Projekt</span><b>Ihr Garten</b></div>
+        <div><span>Ausführung</span><b>Frank Morlak, Epe</b></div>
+        <div><span>Maßstab</span><b>1 : 200</b></div>
+        <div><span>Blatt</span><b>1 / 1</b></div>
+      </div>
+      <div class="legende" role="tablist" aria-label="Bereiche im Plan">
+        <button type="button" class="leg aktiv" data-z="bau" role="tab" aria-selected="true"><i>1</i>Terrasse &amp; Wege</button>
+        <button type="button" class="leg" data-z="pflanzen" role="tab" aria-selected="false"><i>2</i>Beete &amp; Pflanzen</button>
+        <button type="button" class="leg" data-z="baum" role="tab" aria-selected="false"><i>3</i>Bäume</button>
+        <button type="button" class="leg" data-z="pflege" role="tab" aria-selected="false"><i>4</i>Hecke &amp; Rasen</button>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="stimmen" id="stimmen">
+  <div class="wrap">
+    <p class="zitat"><span>„Top Arbeit.“</span> <span>„Super nett.“</span> <span>„Viel Auswahl.“</span></p>
+    <p class="quelle"><b>4,9</b> <span class="sterne" aria-label="4,9 von 5 Sternen">★★★★★</span> aus 16 Google-Bewertungen</p>
+  </div>
+</section>
+
+<section class="leistungen" id="leistungen">
+  <div class="wrap">
+    <p class="kicker">Leistungen</p>
+    <h2>Vom ersten Spatenstich bis zur Pflege</h2>
+    <div class="karten">
+      <article class="karte" data-z="bau">
+        <div class="kb"><img src="img/wege-640.jpg" alt="Beispielbild: gepflasterter Gartenweg mit Natursteinmauer" width="640" height="427" loading="lazy"><span class="beispiel">Beispielbild</span></div>
+        <div class="kt"><p class="knr">1</p><h3>Garten- und Landschaftsbau</h3><p>Terrassen, Wege und Einfahrten, neu angelegt oder umgestaltet.</p></div>
+      </article>
+      <article class="karte" data-z="pflanzen">
+        <div class="kb"><img src="img/beet-640.jpg" alt="Beispielbild: Staudenbeet mit Katzenminze und Gräsern" width="640" height="427" loading="lazy"><span class="beispiel">Beispielbild</span></div>
+        <div class="kt"><p class="knr">2</p><h3>Gärtnerei und Gartenbau</h3><p>Pflanzen und Beete, die zu Ihrem Garten passen. „Viel Auswahl“, heißt es in einer Google-Bewertung.</p></div>
+      </article>
+      <article class="karte" data-z="baum">
+        <div class="kb"><img src="img/baum-640.jpg" alt="Beispielbild: Baumpfleger mit Seil in der Baumkrone" width="640" height="427" loading="lazy"><span class="beispiel">Beispielbild</span></div>
+        <div class="kt"><p class="knr">3</p><h3>Baumpflege</h3><p>Schnitt und Pflege, damit Bäume gesund und sicher bleiben.</p></div>
+      </article>
+      <article class="karte" data-z="pflege">
+        <div class="kb"><img src="img/hecke-640.jpg" alt="Beispielbild: Heckenschnitt an einer hohen Hecke" width="640" height="427" loading="lazy"><span class="beispiel">Beispielbild</span></div>
+        <div class="kt"><p class="knr">4</p><h3>Garten- und Landschaftspflege</h3><p>Hecke, Rasen und Beete in Form halten, einmalig oder regelmäßig.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="projekte">
+  <div class="wrap projekte-in">
+    <div class="pt">
+      <p class="kicker">Aus der Arbeit</p>
+      <h2>Fertige Gärten</h2>
+      <p class="entwurf-notiz">Im Entwurf mit Beispielbildern. Hier kommen Ihre eigenen Projektfotos hin, ein paar Handyfotos genügen.</p>
+    </div>
+    <div class="galerie">
+      <figure><img src="img/mauer-640.jpg" alt="Beispielbild: Natursteinmauer mit Herbstbäumen und Hecken" width="640" height="427" loading="lazy"><span class="beispiel">Beispielbild</span></figure>
+      <figure><img src="img/pflanzen-640.jpg" alt="Beispielbild: Pflanzenreihen in einer Gärtnerei" width="640" height="427" loading="lazy"><span class="beispiel">Beispielbild</span></figure>
+      <figure class="platzhalter"><svg viewBox="0 0 120 160" aria-hidden="true"><rect x="22" y="40" width="76" height="58" rx="6" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="60" cy="69" r="15" fill="none" stroke="currentColor" stroke-width="3"/><path d="M44 40l6-9h20l6 9" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg><figcaption>Ihr Foto<br><small>von einem fertigen Garten</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="anfrage" id="anfrage">
+  <div class="wrap anfrage-in">
+    <div class="af-kopf">
+      <p class="kicker">Gartenanfrage</p>
+      <h2>Ihr Garten, in einer Minute beschrieben.</h2>
+      <p>Ein paar Klicks und gern ein Foto. Frank Morlak sieht sofort, worum es geht, und ruft Sie zurück.</p>
+    </div>
+
+    <form class="formular" id="formular" novalidate>
+      <fieldset>
+        <legend>Was steht an? <small>Mehrere möglich</small></legend>
+        <div class="chips" data-feld="was">
+          <label><input type="checkbox" name="was" value="Terrasse & Wege" data-z="bau"><span>Terrasse &amp; Wege</span></label>
+          <label><input type="checkbox" name="was" value="Beete & Pflanzen" data-z="pflanzen"><span>Beete &amp; Pflanzen</span></label>
+          <label><input type="checkbox" name="was" value="Bäume" data-z="baum"><span>Bäume</span></label>
+          <label><input type="checkbox" name="was" value="Hecke & Rasen" data-z="pflege"><span>Hecke &amp; Rasen</span></label>
+          <label><input type="checkbox" name="was" value="Garten neu anlegen"><span>Garten neu anlegen</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Wie groß ist der Garten ungefähr?</legend>
+        <div class="chips" data-feld="groesse">
+          <label><input type="radio" name="groesse" value="bis 100 m²"><span>bis 100 m²</span></label>
+          <label><input type="radio" name="groesse" value="100 bis 300 m²"><span>100 bis 300 m²</span></label>
+          <label><input type="radio" name="groesse" value="über 300 m²"><span>über 300 m²</span></label>
+          <label><input type="radio" name="groesse" value="weiß ich nicht"><span>weiß ich nicht</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Wann soll es losgehen?</legend>
+        <div class="chips" data-feld="wann">
+          <label><input type="radio" name="wann" value="so bald wie möglich"><span>so bald wie möglich</span></label>
+          <label><input type="radio" name="wann" value="im Frühjahr"><span>im Frühjahr</span></label>
+          <label><input type="radio" name="wann" value="flexibel"><span>flexibel</span></label>
+        </div>
+      </fieldset>
+      <div class="foto-feld">
+        <label class="foto-knopf"><input type="file" id="foto" accept="image/*" multiple><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm8 11a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9z" fill="currentColor"/></svg><span id="foto-text">Foto vom Garten anhängen (optional)</span></label>
+      </div>
+      <div class="felder">
+        <label>Name<input type="text" name="name" id="f-name" autocomplete="name"></label>
+        <label>Telefon<input type="tel" name="tel" id="f-tel" autocomplete="tel"></label>
+        <label>Ort<input type="text" name="ort" id="f-ort" placeholder="z. B. Epe, Gronau, Ahaus"></label>
+      </div>
+      <button type="submit" class="knopf knopf-voll knopf-gross">Anfrage senden</button>
+      <p class="entwurf-hinweis">Entwurf: Das Formular wird nicht versendet.</p>
+      <p class="danke" id="danke" hidden>Danke! So würde Ihre Anfrage bei Frank Morlak ankommen. (Im Entwurf wird nichts gesendet.)</p>
+    </form>
+
+    <aside class="af-plankopf" aria-label="Vorschau Ihrer Anfrage">
+      <p class="af-titel">So kommt Ihre Anfrage an:</p>
+      <div class="plankopf plankopf-gross" id="vorschau">
+        <div class="pk-breit"><span>Projekt</span><b id="v-was">noch nichts gewählt</b></div>
+        <div><span>Größe</span><b id="v-groesse">–</b></div>
+        <div><span>Start</span><b id="v-wann">–</b></div>
+        <div><span>Auftraggeber</span><b id="v-name">–</b></div>
+        <div><span>Ort</span><b id="v-ort">–</b></div>
+        <div class="pk-breit"><span>Fotos</span><b id="v-foto">keine</b></div>
+      </div>
+      <p class="af-alt">Lieber direkt sprechen? <a href="tel:+492565400026">02565 40 00 26</a></p>
+    </aside>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+  <div class="wrap kontakt-in">
+    <div>
+      <p class="kicker">Kontakt</p>
+      <h2>Frank Morlak</h2>
+      <p>Kultur-, Garten- und Landschaftsbau<br>Storker Hook 13 A<br>48599 Gronau-Epe</p>
+      <p><a class="unterstrichen" href="https://www.google.com/maps/search/?api=1&amp;query=Storker+Hook+13A+48599+Gronau-Epe" rel="noopener">Route in Google Maps öffnen</a></p>
+    </div>
+    <div class="kontakt-wege">
+      <a class="kw" href="tel:+492565400026"><span>Telefon</span><b>02565 40 00 26</b></a>
+      <a class="kw" href="mailto:frankmorlak-galabau@web.de"><span>E-Mail</span><b>frankmorlak-galabau@web.de</b></a>
+      <a class="kw" href="#anfrage"><span>Online</span><b>Gartenanfrage stellen</b></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="fuss">
+  <div class="wrap fuss-in">
+    <p><b>Unverbindlicher Entwurf von Leon Oßendorf, kein offizieller Auftritt von Frank Morlak Kultur-, Garten- und Landschaftsbau.</b> Alle Fotos sind Beispielbilder von Unsplash (Sergej, henry perks, Tatyana Rubleva, Mustafa Turhan, Phil Hearing). Gartenplan gezeichnet von Leon Oßendorf.</p>
+    <p class="fuss-links"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+  </div>
+</footer>
+
+<div class="daumenleiste" aria-label="Schnellkontakt">
+  <a href="tel:+492565400026" class="dl-tel">Anrufen</a>
+  <a href="#anfrage" class="dl-anf">Garten anfragen</a>
+</div>
+
+<script src="js/plan.js"></script>
+</body>
+</html>
